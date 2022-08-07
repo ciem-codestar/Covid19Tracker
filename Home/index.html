@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>COVID-19 tracker</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- BS5 CSS Code -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+
+    <!-- BS5 JS Code -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"></script>
+
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:200,100,400" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body>
+    <header>
+      <!-- Navbar -->
+      <nav class="navbar navbar-expand-sm navbar-dark fixed-top">
+        <div class="container-fluid">
+          <!-- Logo -->
+          <a href="../Home/index.html" class="navbar-brand"><img src="Images/Web Logo.gif" alt="Logo" /></a>
+
+          <!-- Collapsiable -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a href="../Home/index.html" class="nav-link active1">Home</a>
+              </li>
+              <li class="nav-item">
+                <a href="#covid" class="nav-link">Covid19</a>
+              </li>
+              <li class="nav-item">
+                <a href="#use" class="nav-link">What Use</a>
+              </li>
+              <li class="nav-item">
+                <a href="#symptom" class="nav-link">Symptoms</a>
+              </li>
+              <li class="nav-item">
+                <a href="#prevent" class="nav-link">Preventions</a>
+              </li>
+              <li class="nav-item">
+                <a href="../LiveStatus/index.html" class="nav-link" target="_blank">Live Update</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <!-- Background -->
+      <div class="back">
+        <div class="left">
+          <img src="Images/left.gif" alt="" srcset="" />
+        </div>
+
+        <div class="right">
+          <h1 id="text"></h1>
+        </div>
+      </div>
+
+      <!-- Covid19 -->
+      <div id="covid">
+        <div class="heading">
+          <h1>
+            <ion-icon name="aperture-outline" class="icon"></ion-icon>What are
+            Coronaviruses?
+          </h1>
+          <p>
+            Coronaviruses are a group of viruses belonging to the family of
+            Coronaviridae, which infect both animals and humans. Human
+            coronaviruses can cause mild disease similar to a common cold, while
+            others cause more severe disease (such as MERS - Middle East
+            Respiratory Syndrome and SARS – Severe Acute Respiratory Syndrome).
+          </p>
+          <button class="btn">
+            <a href="#symptom" class="text-decoration-none">Symptoms</a>
+          </button>
+        </div>
+        <img src="Images/virus.jpg" alt="" />
+      </div>
+
+      <!-- USE -->
+      <div id="use">
+        <h1>What Should We Use</h1>
+        <div class="container1">
+          <!-- First -->
+          <div class="card">
+            <img class="card-img-top" src="Images/mask.jpg" alt="Card image" />
+            <img class="card-img-top op" src="Images/mask1.jpg" alt="Card image" />
+            <div class="card-body">
+              <h4>Using Mask</h4>
+            </div>
+          </div>
+
+          <!-- Second -->
+          <div class="card">
+            <img class="card-img-top" src="Images/sanitize1.webp" alt="Card image" />
+            <img class="card-img-top op" src="Images/sanitize.jpg" alt="Card image" />
+            <div class="card-body">
+              <h4>Hand Sanitizer</h4>
+            </div>
+          </div>
+
+          <!-- Third -->
+          <div class="card">
+            <img class="card-img-top" src="Images/vaouper1.jpg" alt="Card image" />
+            <img class="card-img-top op" src="Images/vaouper.png" alt="Card image" />
+            <div class="card-body">
+              <h4>Using Vapor</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Symptom -->
+      <div id="symptom">
+        <h1>Coronavirus Symptoms</h1>
+        <div class="up">
+          <ul>
+            Most common symptoms:
+            <li>fever</li>
+            <li>cough</li>
+            <li>tiredness</li>
+            <li>loss of taste or smell</li>
+          </ul>
+          <img src="Images/symptoms.png" alt="" />
+          <ul>
+            Serious symptoms:
+            <li>difficulty breathing or shortness of breath</li>
+            <li>loss of speech or mobility, or confusion</li>
+            <li>chest pain</li>
+          </ul>
+        </div>
+        <div class="down">
+          <p>
+            On average it takes 5–6 days from when someone is infected with the
+            virus for symptoms to show, however it can take up to 14 days.
+          </p>
+        </div>
+      </div>
+
+      <!-- Preventions -->
+
+      <!-- Carousel -->
+      <div id="prevent">
+        <div id="demo" class="carousel slide" data-bs-ride="carousel">
+          <!-- Indicators/dots -->
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="3"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="4"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="5"></button>
+          </div>
+
+          <!-- The slideshow/carousel -->
+          <div class="carousel-inner">
+            <!-- Wash Hands -->
+            <div class="carousel-item active">
+              <img src="Images/handwash.jpg" alt="" class="d-block" />
+              <div class="carousel-caption">
+                <h3>Wash your hands frequently</h3>
+                <p>
+                  Clean your hands often.Use soap and water, or an alcohol-based
+                  hand rub.
+                </p>
+              </div>
+            </div>
+
+            <!-- Social Distance -->
+            <div class="carousel-item">
+              <img src="Images/socialdistance.jpg" alt="" class="d-block" />
+              <div class="carousel-caption">
+                <h3>Maintain social distancing</h3>
+                <p>
+                  Maintain a safe distance form anyone who is coughing or
+                  sneezing.
+                </p>
+              </div>
+            </div>
+
+            <!-- Avoid Touching -->
+            <div class="carousel-item">
+              <img src="Images/notouch.jpg" alt="" class="d-block" />
+              <div class="carousel-caption">
+                <h3>Avoid touching face</h3>
+                <p>Don't touch your eyes,nose or mouth.</p>
+              </div>
+            </div>
+
+            <!-- Using Mask -->
+            <div class="carousel-item">
+              <img src="Images/facemask.jpg" alt="" class="d-block" />
+              <div class="carousel-caption">
+                <h3>Using face mask</h3>
+                <p>
+                  Cover your nose and mouth with your bent elbow or a tissue
+                  when you cough or sneeze.
+                </p>
+              </div>
+            </div>
+
+            <!-- Medical Care -->
+            <div class="carousel-item">
+              <img src="Images/care.jpg" alt="" class="d-block" />
+              <div class="carousel-caption">
+                <h3>Seek medical care</h3>
+                <p>
+                  if you have a fever, a cough, and difficulty breathing, seek
+                  medical attention.Call in advance.
+                </p>
+              </div>
+            </div>
+
+            <!-- Informed -->
+            <div class="carousel-item">
+              <img src="Images/stay.png" alt="" class="d-block" />
+              <div class="carousel-caption">
+                <h3>Stay informed</h3>
+                <p>Follow the directions of your local healthy authority.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Left and right controls/icons -->
+          <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+          </button>
+        </div>
+      </div>
+    </main>
+
+
+    <footer class="footer">
+      <div class="ft">
+        <div class="ab">
+          <a href="About.html">About</a><br>
+          <b>Be tuned to be safe !</b>
+          a website and its application which generate the case study of COVID-19 including Deaths, Recovered, and Total
+          Cases occurring in 202 countries as per date.
+        </div>
+        <div class="con">
+          <a href="Contact.html">Contact</a><br>
+          <a class="mail" href="mailto:contactvirtuallibrary@gmail.com">contactcodestar@gmail.com</a></h4>
+          <div class="img">
+            <a href="index.html"><img src="instagram.png" alt=""></a><a href="index.html"><img src="facebook.png"
+                alt=""></a><a href="index.html"><img src="linkedin.png" alt=""></a>
+          </div>
+        </div>
+        <div class="download">
+          Download The APP
+          <button><a href="https://drive.google.com/file/d/1BtJ40T2EoPfqFy0X4zzCmdCu1LGnApBR/view?usp=sharing" download><img src="Images/app.png" alt="">
+              Download</a>
+          </button>
+        </div>
+      </div>
+      <p>Copyright&copy;2022 | Developed By CodeStar | Hosted By GitHub</p>
+    </footer>
+    <!-- JS -->
+    <script src="index.js"></script>
+
+    <!-- Icon -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  </body>
+
+</html>

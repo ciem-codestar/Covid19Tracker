@@ -1,0 +1,492 @@
+/* Roboto */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* body{
+    
+} */
+/* HTML PART */
+html {
+    scrollbar-width: thin;
+    scrollbar-color: rgba(0, 162, 255, 0.473) transparent;
+    scroll-behavior: smooth;
+    scrollbar-darkshadow-color: #212529;
+}
+
+html::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.459);
+}
+
+/* For Hide Something */
+.hide {
+    display: none;
+}
+
+/* For FadeIN Something */
+.fadeIn {
+    animation: fade 0.5s ease-in-out;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
+/* Live Status Division */
+.status {
+    width: 100%;
+    height: fit-content;
+    background-color: #edfaff;
+}
+
+/* Report Section */
+.latest-report {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    /* background-color: #edfaff; */
+}
+
+/* Media Query */
+@media only screen and (max-width: 950px) {
+    .latest-report {
+        display: flex;
+        justify-content: start;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .total-cases,
+    .recovered,
+    .deaths {
+        margin-top: 50px;
+    }
+}
+
+/* Country Section */
+.country {
+    height: 155px;
+    padding: 15px 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+/* Date */
+.as,
+#demo {
+    width: 100%;
+    font-size: 1em;
+    text-align: center;
+}
+
+
+/* Country Name */
+.name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(82, 71, 82);
+    font-size: 2em;
+    font-weight: 800;
+    letter-spacing: 0.02em;
+    border-radius: 4px;
+    padding: 5px;
+    width: 396px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* Country Change Button */
+.change-country {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.change-country .btn {
+    cursor: pointer;
+    font-size: 1.1em;
+    text-align: center;
+    border-style: none;
+    border-radius: 50px;
+    font-weight: 700;
+    text-transform: capitalize;
+    background: linear-gradient(45deg, #ffae00, transparent);
+    color: black;
+    border: 2px solid #c08507;
+    box-shadow: rgba(153, 0, 0, 0.24) 0px 3px 8px;
+    margin: 0 auto;
+}
+
+.change-country .btn:hover {
+    border: 2px solid #ffae00;
+    background: linear-gradient(45deg, #ffae00, transparent);
+    box-shadow: rgb(255, 0, 0) 0px 2px 4px 0px, rgba(2, 157, 223, 0.39) 0px 2px 16px 0px;
+}
+
+/* Search Country Section */
+.search-country {
+    position: relative;
+    top: 10px;
+}
+
+/* Search Box Section */
+.search-box {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 450px;
+    height: 38px;
+    background-color: #121212;
+    z-index: 1;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+/* Input Text Box */
+.search-box input {
+    margin: 6px;
+    width: 368px;
+    height: 25px;
+    border: none;
+    border-style: none;
+    border-radius: 2px;
+    background-color: transparent;
+    color: #fff;
+    padding-left: 16px;
+    font-size: 1.1em;
+}
+
+/* Cross Icon */
+.search-box img {
+    width: 50px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+/* Country List Section */
+.country-list {
+    display: flex;
+    justify-content: start;
+    position: absolute;
+    top: 30px;
+    width: 450px;
+    height: 300px;
+    background-color: #111;
+    opacity: 0.9;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    border-bottom-left-radius: 4px;
+}
+
+/* Country List UL LI*/
+.country-list ul {
+    width: 100%;
+}
+
+.country-list ul li {
+    list-style: none;
+    cursor: pointer;
+    padding: 10px;
+    color: white;
+}
+
+.country-list ul li:hover {
+    border-left: 2px solid rgb(100, 35, 253);
+    color: rgb(223, 61, 255);
+}
+
+/* Country List ScrollBar */
+.country-list::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+.country-list::-webkit-scrollbar-track {
+    background: #111;
+}
+
+/* Handle */
+.country-list::-webkit-scrollbar-thumb {
+    background: #F1F1F1;
+}
+
+/* Handle on hover */
+.country-list::-webkit-scrollbar-thumb:hover {
+    background: #FFF;
+}
+
+
+
+@media only screen and (max-width: 545px) {
+    .search-country {
+        margin-left: 20px;
+    }
+
+    .search-box {
+        width: 90%;
+    }
+
+    /* Country List Section */
+    .country-list {
+        width: 90%;
+        margin: 0 auto;
+        overflow-x: scroll;
+    }
+
+    #as,
+    #demo {
+        font-size: 3vw;
+    }
+
+}
+
+/* Total-Case || Recovered || Deaths Section */
+.total-cases,
+.recovered,
+.deaths {
+    width: 175px;
+    height: 160px;
+    padding: 15px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    border-radius: 4px;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin-left: 25px;
+}
+
+.total-cases {
+    background: linear-gradient(to top, #ffd500, #e9c955);
+}
+
+.recovered {
+    background: linear-gradient(to top, #26ff00, #a5f55f);
+
+}
+
+.deaths {
+    background: linear-gradient(to top, #e92a2a, #fe9593);
+
+}
+
+.title {
+    text-align: center;
+    font-size: 1em;
+    margin-bottom: 15px;
+    font-weight: 900;
+    color: #111;
+}
+
+.title .line {
+    background-color: grey;
+    height: 1px;
+}
+
+.total-cases .value {
+    font-size: 1.1em;
+    font-weight: 800;
+    color: rgb(59, 59, 3)
+}
+
+.recovered .value {
+    font-size: 1.1em;
+    font-weight: 800;
+    color: #005c25;
+}
+
+.deaths .value {
+    font-size: 1.1em;
+    ;
+    font-weight: 800;
+    color: #620b08;
+}
+
+.new-value {
+    font-size: 1em;
+    color: #1f0085;
+    font-weight: 600;
+}
+
+/* Chart Section */
+.chart {
+    width: 80%;
+    height: 70vh;
+    min-height: 500px;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+
+.graph {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    width: 98%;
+    height: fit-content;
+    font-size: 2em;
+    background: linear-gradient(45deg, transparent, rgba(0, 183, 255, 0.397));
+    box-shadow: rgba(0, 102, 255, 0.16) 0px 1px 4px, rgb(0, 162, 255) 0px 0px 0px 1px;
+    border-radius: 3px;
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+}
+
+#map {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+/* Footer */
+.footer {
+    width: 100%;
+    background-color: #131376;
+    color: white;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.footer .ft {
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer .ab {
+    width: 50%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(237, 237, 237);
+    font-size: 15px;
+}
+
+.footer .ab a {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(154, 149, 149);
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.footer .con {
+    width: 20%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(237, 237, 237);
+    font-size: 15px;
+}
+
+.footer .con a {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(154, 149, 149);
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.footer .con .mail {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(240, 240, 240);
+    font-size: 15px;
+}
+
+.footer .con .mail:hover {
+    color: #FC0;
+}
+
+.footer p {
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    color: beige;
+    padding-top: 10px;
+}
+
+.footer .img {
+    display: flex;
+    justify-content: space-between;
+    width: 50px;
+    padding: 20px;
+}
+
+.footer .img img {
+    width: 48px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.footer .download {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(240, 240, 240);
+    font-size: 1.2em;
+}
+
+.footer .download>button>a>img {
+    width: 45px;
+    border-radius: 10px;
+}
+
+.footer .download>button>a {
+    text-decoration: none;
+    background-color: #ffffff;
+    color: #24032e;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-transform: uppercase;
+    font-size: 1.2em;
+    font-weight: 600;
+}
+
+.footer .download>button {
+    background-color: #ffffff;
+    margin-top: 5px;
+    width: fit-content;
+    border-radius: 10px;
+    border-style: none;
+    padding: 5px;
+}
+
+.footer .download>button:hover {
+    box-shadow: rgba(255, 255, 255, 0.35) 0px 5px 15px;
+}
+
+@media only screen and (max-width: 793px) {
+    .footer .ft {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .con {
+        margin-top: 20px;
+        border-bottom: 4px solid black;
+    }
+
+    .con .img {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+}
